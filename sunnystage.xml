@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rootRL"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/normalbg"
+        tools:ignore="MissingConstraints">
+
+
+
+
+
+        <TextView
+            android:id="@+id/parchedtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="175dp"
+            android:text="Yay! He's Growing! Spoil him some more!"
+            android:textColor="#FBFBFB"
+            android:fontFamily="monospace"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <ImageView
+            android:id="@+id/tree"
+            android:layout_width="427dp"
+            android:layout_height="441dp"
+            app:srcCompat="@drawable/treea"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="20dp"
+
+
+            />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_marginTop="200dp"
+            android:layout_height="427dp"
+            android:src="@drawable/grass" />
+
+        <ImageView
+            android:id="@+id/sun"
+            android:layout_width="205dp"
+            android:layout_height="186dp"
+            app:srcCompat="@drawable/sun" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/water"
+            android:text="☁️"
+            android:textSize="100sp"
+            android:onClick="onClickFour"
+            android:layout_marginTop="580dp"
+            android:layout_marginLeft="240dp"
+            android:fontFamily="monospace"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sunl"
+            android:fontFamily="monospace"
+            android:text="☀️"
+            android:textSize="100sp"
+            android:onClick="onClickFour"
+            android:layout_marginTop="580dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

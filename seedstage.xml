@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rootRL"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/normalbg"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_marginTop="223dp"
+            android:layout_height="427dp"
+            android:src="@drawable/grass" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="161dp"
+            android:layout_height="143dp"
+            android:layout_marginBottom="48dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="120dp"
+            android:onClick="onClickTwo"
+            android:text="☁️"
+            android:textSize="90sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="125dp" />
+
+        <TextView
+            android:layout_width="450dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="300dp"
+            android:textColor="#FBFBFB"
+            android:id="@+id/parchedtext"
+            android:text="The seed is parched. Give him some water!"
+            android:fontFamily="monospace"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/tree"
+            android:layout_width="129dp"
+            android:layout_height="124dp"
+            android:layout_marginTop="500dp"
+            android:layout_marginLeft="130dp"
+            app:srcCompat="@drawable/seed"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="141dp"
+            tools:layout_editor_absoluteY="368dp"
+
+            />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
